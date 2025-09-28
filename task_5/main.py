@@ -1,10 +1,12 @@
+import math
+
 class_1 = int(input("Введите количество человек в первом классе"))
 class_2 = int(input("Введите количество человек во втором классе"))
 class_3 = int(input("Введите количество человек в третьем  классе"))
 
-all = (class_1 + class_2 + class_3) // 3
-ostatok = (class_1 + class_2 + class_3) % 3
-if (ostatok > 0):
-    all+=1
+all = math.ceil((class_1 + class_2 + class_3) / 2)
+# ostatok = (class_1 + class_2 + class_3) % 2
+# if (ostatok > 0):
+#     all+=1
     
 print ("Нужно закупить ",all , "парт")
